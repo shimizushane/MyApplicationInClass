@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application In Class</string>
+    <string name="add_plus">+</string>
+    <string name="add_equal">=</string>
+    <string name="change_page">Next Page</string>
+    <string name="sec_page">Second Page</string>
+    <string name="btn_page">btn_page</string>
+    <string name="btn_web">web</string>
+    <string name="btn_tel">tel</string>
+    <string name="btn_map">map</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">上課練習App</string>
+    <string name="change_page">下一頁</string>
+    <string name="sec_page">第二頁</string>
+    <string name="add_plus">+</string>
+    <string name="add_equal">=</string>
+    <string name="btn_page">隱性呼叫</string>
+</resources>
