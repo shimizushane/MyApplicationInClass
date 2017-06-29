@@ -163,4 +163,15 @@
         app:layout_constraintLeft_toRightOf="@+id/editText3"
         app:layout_constraintTop_toTopOf="@+id/editText3" />
 
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clickforth"
+        android:text="@string/btn_forth"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
 </android.support.constraint.ConstraintLayout>

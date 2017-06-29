@@ -24,7 +24,12 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ForthActivity"></activity>
+        <activity android:name=".ForthActivity">
+            <intent-filter>
+                <action android:name="forthpage"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

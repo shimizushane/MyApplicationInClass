@@ -113,4 +113,8 @@ public class MainActivity extends AppCompatActivity {
         intentshare.putExtra(Intent.EXTRA_TEXT,ed1.getText().toString());
         startActivity(Intent.createChooser(intentshare,"選擇分享對象"));
     }
+    public void clickforth(View v)
+    {
+        startActivity(new Intent().setAction("forthpage"));
+    }
 }
