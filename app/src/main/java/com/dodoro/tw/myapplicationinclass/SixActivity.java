@@ -7,20 +7,22 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.SimpleAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class SixActivity extends AppCompatActivity {
 
-    Spinner spinner;
-    Spinner spinner2;
+    Spinner spinner,spinner2,spinner3;
     Button btn1,btn2;
     TextView t2;
     ArrayList<String> mylist;
     EditText ed1;
+    ArrayList<HashMap<String,String>> list2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +34,7 @@ public class SixActivity extends AppCompatActivity {
         btn1 = (Button)findViewById(R.id.button1);
         btn2 = (Button)findViewById(R.id.button2);
         ed1 = (EditText)findViewById(R.id.editText1);
+        spinner3 =(Spinner)findViewById(R.id.spinner3);
 /*
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
             @Override
@@ -82,5 +85,23 @@ public class SixActivity extends AppCompatActivity {
                 mylist.add(ed1.getText().toString());
             }
         });
+
+        list2 = new ArrayList<>();
+        HashMap<String, String> m1 = new HashMap<>();
+        m1.put("city", "台北");
+        m1.put("code", "02");
+        HashMap<String, String> m2 = new HashMap<>();
+        m2.put("city", "台中");
+        m2.put("code", "04");
+        HashMap<String, String> m3 = new HashMap<>();
+        m3.put("city", "高雄");
+        m3.put("code", "07");
+
+        list2.add(m1);
+        list2.add(m2);
+        list2.add(m3);
+
+        SimpleAdapter adapter2 = new SimpleAdapter(SixActivity.this,list2,android.R.layout.simple_list_item_2,new String[]{"city","code"},new int[]{android.R.id.text1,android.R.id.text2});
+        spinner3.setAdapter(adapter2);
     }
 }
