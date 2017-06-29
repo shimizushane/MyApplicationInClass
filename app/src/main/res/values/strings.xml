@@ -10,4 +10,7 @@
     <string name="btn_map">map</string>
     <string name="btn_share">share</string>
     <string name="btn_forth">Forth</string>
+    <string name="btn_five">Five</string>
+    <string name="btn_toast">Toast</string>
+    <string name="btn_log">Log</string>
 </resources>

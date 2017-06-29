@@ -18,6 +18,11 @@ public class ForthActivity extends AppCompatActivity implements View.OnClickList
         Button btn1 = (Button) findViewById(R.id.button1);
         Button btn2 = (Button) findViewById(R.id.button2);
         Button btn3 = (Button) findViewById(R.id.button3);
+        /*
+        btn1.setOnClickListener(btnlisten);
+        btn2.setOnClickListener(btnlisten);
+        btn3.setOnClickListener(btnlisten);
+        */
 
         btn1.setOnClickListener(this);
         btn2.setOnClickListener(this);
@@ -25,7 +30,6 @@ public class ForthActivity extends AppCompatActivity implements View.OnClickList
         /*
             推測this所帶入的是ForthActivity，主因在於ForthActivity有實作View.OnClickListener
          */
-
     }
     /*
     private Button.OnClickListener btnlisten = new View.OnClickListener() {
@@ -34,7 +38,7 @@ public class ForthActivity extends AppCompatActivity implements View.OnClickList
         public void onClick(View v) {
             TextView t2 = (TextView) findViewById(R.id.textView1);
             t2.setText(((TextView) v).getText().toString());
-            //button物件會傳入View v，再由View轉成子類別TextView後才能使用TextView的getText()取出Text
+            //button物件會傳入View v，再由View v轉成子類別TextView後才能使用TextView的getText()取出Button的Text
 
                 /*
                 switch(v.getId()) {

@@ -8,4 +8,7 @@
     <string name="btn_page">隱性呼叫</string>
     <string name="btn_share">分享</string>
     <string name="btn_forth">第四頁</string>
+    <string name="btn_five">第五頁</string>
+    <string name="btn_toast">吐司</string>
+    <string name="btn_log">偵測bug</string>
 </resources>

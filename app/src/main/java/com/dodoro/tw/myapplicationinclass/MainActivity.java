@@ -117,4 +117,8 @@ public class MainActivity extends AppCompatActivity {
     {
         startActivity(new Intent().setAction("forthpage"));
     }
+    public void clickfive(View v)
+    {
+        startActivity(new Intent().setAction("fivepage"));
+    }
 }
