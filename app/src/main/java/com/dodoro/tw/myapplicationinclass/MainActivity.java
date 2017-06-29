@@ -121,4 +121,8 @@ public class MainActivity extends AppCompatActivity {
     {
         startActivity(new Intent().setAction("fivepage"));
     }
+    public void clicksix(View v)
+    {
+        startActivity(new Intent().setAction("sixpage"));
+    }
 }

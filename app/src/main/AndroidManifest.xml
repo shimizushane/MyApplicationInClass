@@ -27,12 +27,21 @@
         <activity android:name=".ForthActivity">
             <intent-filter>
                 <action android:name="forthpage" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".FiveActivity">
             <intent-filter>
                 <action android:name="fivepage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SixActivity">
+            <intent-filter>
+                <action android:name="sixpage" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

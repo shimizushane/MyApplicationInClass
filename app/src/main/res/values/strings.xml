@@ -13,4 +13,12 @@
     <string name="btn_five">Five</string>
     <string name="btn_toast">Toast</string>
     <string name="btn_log">Log</string>
+    <string name="btn_six">Six</string>
+    <string-array name="city">
+        <item>台北</item>
+        <item>桃園</item>
+        <item>台中</item>
+        <item>台南</item>
+        <item>高雄</item>
+    </string-array>
 </resources>
