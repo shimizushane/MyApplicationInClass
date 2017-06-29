@@ -6,8 +6,10 @@ import android.text.Layout;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 //注意這一行
 import static com.dodoro.tw.myapplicationinclass.R.id.button3;
@@ -34,6 +36,14 @@ public class FiveActivity extends AppCompatActivity implements View.OnClickListe
         layout.addView(btn3);
 
         btn3.setOnClickListener(this);
+
+        ToggleButton tb = (ToggleButton)findViewById(R.id.toggleButton1);
+        tb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                Toast.makeText(FiveActivity.this,"現在的狀態: " + isChecked,Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
