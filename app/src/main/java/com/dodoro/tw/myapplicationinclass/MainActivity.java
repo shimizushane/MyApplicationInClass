@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void inital()
     {
-        btn = (Button)findViewById(R.id.button1);
+        btn = (Button)findViewById(R.id.button);
         t1 = (TextView)findViewById(R.id.textView2);
         ed1 = (EditText)findViewById(R.id.editText1);
         ed2 = (EditText)findViewById(R.id.editText2);
