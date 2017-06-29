@@ -8,4 +8,5 @@
     <string name="btn_web">web</string>
     <string name="btn_tel">tel</string>
     <string name="btn_map">map</string>
+    <string name="btn_share">share</string>
 </resources>

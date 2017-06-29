@@ -104,4 +104,13 @@ public class MainActivity extends AppCompatActivity {
         Uri uri = Uri.parse("geo:0,0?q=中壢火車站");
         startActivity(new Intent(Intent.ACTION_VIEW,uri));
     }
+    public void clickshare(View v)
+    {
+        Intent intentshare = new Intent();
+        intentshare.setAction(Intent.ACTION_SEND);
+        intentshare.setType("text/plain");
+        EditText ed1 = (EditText)findViewById(R.id.editText3);
+        intentshare.putExtra(Intent.EXTRA_TEXT,ed1.getText().toString());
+        startActivity(Intent.createChooser(intentshare,"選擇分享對象"));
+    }
 }
