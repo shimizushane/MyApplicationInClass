@@ -12,6 +12,8 @@
     <string name="btn_toast">吐司</string>
     <string name="btn_log">偵測bug</string>
     <string name="btn_six">第六頁</string>
+    <string name="btn_seven">第七頁</string>
+    <string name="btn_eight">第八頁</string>
     <string-array name="city">
         <item>台北</item>
         <item>桃園</item>

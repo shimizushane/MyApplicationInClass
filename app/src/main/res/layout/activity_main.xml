@@ -190,10 +190,65 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:onClick="clicksix"
         android:text="@string/btn_six"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="0dp"
+        android:onClick="clickseven"
+        android:text="@string/btn_seven"
+        app:layout_constraintLeft_toRightOf="@+id/button8"
+        app:layout_constraintTop_toTopOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clickeight"
+        android:text="@string/btn_eight"
+        app:layout_constraintLeft_toRightOf="@+id/button9"
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clickimage"
+        android:text="Image"
+        app:layout_constraintLeft_toRightOf="@+id/button10"
+        app:layout_constraintTop_toBottomOf="@+id/button12" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="-2dp"
+        android:onClick="clickwebvideo"
+        android:text="WebVideo"
+        app:layout_constraintLeft_toRightOf="@+id/button11"
+        app:layout_constraintTop_toTopOf="@+id/button11" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clicknine"
+        android:text="NINE"
+        app:layout_constraintLeft_toRightOf="@+id/button12"
+        app:layout_constraintTop_toBottomOf="@+id/button14" />
 
 </android.support.constraint.ConstraintLayout>

@@ -125,4 +125,25 @@ public class MainActivity extends AppCompatActivity {
     {
         startActivity(new Intent().setAction("sixpage"));
     }
+    public void clickseven(View v)
+    {
+        startActivity(new Intent().setAction("sevenpage"));
+    }
+    public void clickeight(View v)
+    {
+        startActivity(new Intent().setAction("eightpage"));
+    }
+
+    public void clickimage(View v)
+    {
+        startActivity(new Intent().setAction("imagepage"));
+    }
+    public void clickwebvideo(View v)
+    {
+        startActivity(new Intent().setAction("webvideopage"));
+    }
+    public void clicknine(View v)
+    {
+        startActivity(new Intent().setAction("ninepage"));
+    }
 }

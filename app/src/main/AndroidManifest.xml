@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dodoro.tw.myapplicationinclass">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -41,6 +43,41 @@
         <activity android:name=".SixActivity">
             <intent-filter>
                 <action android:name="sixpage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SevenActivity">
+            <intent-filter>
+                <action android:name="sevenpage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EightActivity">
+            <intent-filter>
+                <action android:name="eightpage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ImageActivity">
+            <intent-filter>
+                <action android:name="imagepage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WebVideoActivity">
+            <intent-filter>
+                <action android:name="webvideopage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NineActivity">
+            <intent-filter>
+                <action android:name="ninepage" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

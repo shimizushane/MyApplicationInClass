@@ -14,6 +14,8 @@
     <string name="btn_toast">Toast</string>
     <string name="btn_log">Log</string>
     <string name="btn_six">Six</string>
+    <string name="btn_seven">Seven</string>
+    <string name="btn_eight">Eight</string>
     <string-array name="city">
         <item>台北</item>
         <item>桃園</item>
@@ -21,4 +23,5 @@
         <item>台南</item>
         <item>高雄</item>
     </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>
