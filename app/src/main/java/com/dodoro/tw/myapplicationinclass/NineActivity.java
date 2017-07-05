@@ -10,10 +10,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class NineActivity extends AppCompatActivity implements View.OnClickListener{
 
-    int choice;
+    Integer choice;
     Button btn1,btn2,btn3;
     FloatingActionButton fab ;
     @Override
@@ -73,16 +74,21 @@ public class NineActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button3:
                 final String str[] = {"可樂", "紅茶", "汽水", "果汁"};
-                new AlertDialog.Builder(NineActivity.this).setTitle("單選對話").setSingleChoiceItems(str, -1, new DialogInterface.OnClickListener() {
+                Snackbar.make(v,String.valueOf(choice),Snackbar.LENGTH_SHORT).show();
+                new AlertDialog.Builder(NineActivity.this).setTitle("單選對話").setCancelable(false).setSingleChoiceItems(str, -1, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+
                         choice = which;
                     }
                 }).setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        TextView tv2 = (TextView)findViewById(R.id.textView2);
-                        tv2.setText(str[choice]);
+                        if(choice != null) {
+                            Toast.makeText(NineActivity.this, String.valueOf(which), Toast.LENGTH_SHORT).show();
+                            TextView tv2 = (TextView) findViewById(R.id.textView2);
+                            tv2.setText(str[choice]);
+                        }
                     }
                 }).show();
                 break;

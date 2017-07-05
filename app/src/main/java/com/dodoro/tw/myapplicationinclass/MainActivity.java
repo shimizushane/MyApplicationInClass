@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -83,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode,resultCode,data);
         if(requestCode == REQUEST_CODE_NAME) {
             if (resultCode == RESULT_OK) {
-
                 TextView tv2 = (TextView) findViewById(R.id.textView3);
                 tv2.setText(data.getStringExtra("username"));
             }
