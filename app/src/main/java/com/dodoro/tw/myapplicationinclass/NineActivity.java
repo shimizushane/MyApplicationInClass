@@ -89,14 +89,14 @@ public class NineActivity extends AppCompatActivity implements View.OnClickListe
                             tv2.setText(str[choice]);
                         }
                     }
-                }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                })/*.setNegativeButton("取消", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         choice = null;
                         TextView tv2 = (TextView) findViewById(R.id.textView2);
                         tv2.setText("");
                     }
-                }).show();
+                })*/.show();
                 break;
         }
 
