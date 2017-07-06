@@ -74,21 +74,27 @@ public class NineActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button3:
                 final String str[] = {"可樂", "紅茶", "汽水", "果汁"};
-                Snackbar.make(v,String.valueOf(choice),Snackbar.LENGTH_SHORT).show();
-                new AlertDialog.Builder(NineActivity.this).setTitle("單選對話").setCancelable(false).setSingleChoiceItems(str, -1, new DialogInterface.OnClickListener() {
+//               Snackbar.make(v,String.valueOf(choice),Snackbar.LENGTH_SHORT).show();
+                new AlertDialog.Builder(NineActivity.this).setTitle("單選對話").setCancelable(false).setSingleChoiceItems(str,choice==null?-1:choice,new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-
                         choice = which;
                     }
-                }).setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                }).setPositiveButton("確認", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         if(choice != null) {
-                            Toast.makeText(NineActivity.this, String.valueOf(which), Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(NineActivity.this, String.valueOf(which), Toast.LENGTH_SHORT).show();
                             TextView tv2 = (TextView) findViewById(R.id.textView2);
                             tv2.setText(str[choice]);
                         }
+                    }
+                }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        choice = null;
+                        TextView tv2 = (TextView) findViewById(R.id.textView2);
+                        tv2.setText("");
                     }
                 }).show();
                 break;
