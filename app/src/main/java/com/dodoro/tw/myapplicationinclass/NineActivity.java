@@ -88,6 +88,8 @@ public class NineActivity extends AppCompatActivity implements View.OnClickListe
                             TextView tv2 = (TextView) findViewById(R.id.textView2);
                             tv2.setText(str[choice]);
                         }
+                        else
+                            Snackbar.make(v,"你沒點選喔!!",Snackbar.LENGTH_SHORT).show();
                     }
                 })/*.setNegativeButton("取消", new DialogInterface.OnClickListener() {
                     @Override
