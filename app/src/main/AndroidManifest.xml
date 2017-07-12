@@ -82,6 +82,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".TenActivity" />
+        <activity android:name=".ElevenActivity" />
+        <activity android:name=".TwelveActivity" />
+        <activity android:name=".ThirteenActivity"></activity>
     </application>
 
 </manifest>

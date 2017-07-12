@@ -146,4 +146,22 @@ public class MainActivity extends AppCompatActivity {
     {
         startActivity(new Intent().setAction("ninepage"));
     }
+    public void clickten(View v)
+    {
+        startActivity(new Intent(MainActivity.this,TenActivity.class));
+    }
+    public void clickeleven(View v)
+    {
+        startActivity(new Intent(MainActivity.this,ElevenActivity.class));
+    }
+
+    public void clicktwelve(View v)
+    {
+        startActivity(new Intent(MainActivity.this,TwelveActivity.class));
+    }
+    public void clickthirteen(View v)
+    {
+        startActivity(new Intent(MainActivity.this,ThirteenActivity.class));
+    }
+
 }
