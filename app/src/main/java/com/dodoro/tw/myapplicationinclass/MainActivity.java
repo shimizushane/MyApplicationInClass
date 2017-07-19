@@ -164,4 +164,29 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this,ThirteenActivity.class));
     }
 
+    public void clickfourteen(View v)
+    {
+        startActivity(new Intent(MainActivity.this,FourteenActivity.class));
+    }
+    /*
+    public void clickfifteen(View v)
+    {
+        startActivity(new Intent(MainActivity.this,ThirteenActivity.class));
+    }
+    public void clicksixteen(View v)
+    {
+        startActivity(new Intent(MainActivity.this,ThirteenActivity.class));
+    }
+    */
+    public void clickdrawerlayout(View v)
+    {
+        startActivity(new Intent(MainActivity.this,DrawerLayoutActivity.class));
+    }
+    /*
+    public void clickseventeen(View v)
+    {
+        startActivity(new Intent(MainActivity.this,ThirteenActivity.class));
+    }
+    */
+
 }

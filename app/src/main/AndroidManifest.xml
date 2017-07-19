@@ -85,7 +85,12 @@
         <activity android:name=".TenActivity" />
         <activity android:name=".ElevenActivity" />
         <activity android:name=".TwelveActivity" />
-        <activity android:name=".ThirteenActivity"></activity>
+        <activity android:name=".ThirteenActivity" />
+        <activity
+            android:name=".DrawerLayoutActivity"
+            android:label="@string/title_activity_drawer_layout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FourteenActivity"></activity>
     </application>
 
 </manifest>

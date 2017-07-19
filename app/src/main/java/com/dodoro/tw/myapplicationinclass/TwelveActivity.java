@@ -4,17 +4,24 @@ import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 public class TwelveActivity extends AppCompatActivity {
     ConstraintLayout constraintLayout;
+    TextView tv1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_twelve);
 
         constraintLayout = (ConstraintLayout)findViewById(R.id.layout1);
+
+        tv1 = (TextView)findViewById(R.id.textView1);
+        registerForContextMenu(tv1);
     }
 
     @Override
@@ -47,5 +54,36 @@ public class TwelveActivity extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        menu.add("aaa");
+        menu.add("bbb");
+        menu.add("ccc");
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        switch(item.getTitle().toString()) {
+            case "aaa":
+                Snackbar.make(constraintLayout,"測試contextmenu AAA",Snackbar.LENGTH_SHORT).show();
+                break;
+            case "bbb":
+                Snackbar.make(constraintLayout,"測試contextmenu BBB",Snackbar.LENGTH_SHORT).show();
+                break;
+            case "ccc":
+                Snackbar.make(constraintLayout,"測試contextmenu CCC",Snackbar.LENGTH_SHORT).show();
+                break;
+
+        }
+        /*
+        if(item.getTitle().equals("aaa"))
+        {
+            Snackbar.make(constraintLayout,"測試contextmenu",Snackbar.LENGTH_SHORT).show();
+        }
+        */
+        return super.onContextItemSelected(item);
     }
 }

@@ -214,10 +214,10 @@
         android:layout_height="wrap_content"
         android:onClick="clickeight"
         android:text="@string/btn_eight"
-        app:layout_constraintTop_toTopOf="@+id/button8"
-        android:layout_marginTop="-3dp"
-        app:layout_constraintLeft_toRightOf="@+id/button8"
-        android:layout_marginLeft="7dp" />
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/button11"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
         android:id="@+id/button13"
@@ -225,10 +225,10 @@
         android:layout_height="wrap_content"
         android:onClick="clickimage"
         android:text="Image"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/button12"
+        android:layout_marginTop="0dp"
         app:layout_constraintLeft_toRightOf="@+id/button9"
-        android:layout_marginLeft="8dp" />
+        android:layout_marginLeft="7dp"
+        app:layout_constraintTop_toTopOf="@+id/button8" />
 
     <Button
         android:id="@+id/button14"
@@ -236,7 +236,7 @@
         android:layout_height="wrap_content"
         android:onClick="clickwebvideo"
         android:text="WebVideo"
-        app:layout_constraintLeft_toRightOf="@+id/button10"
+        app:layout_constraintLeft_toRightOf="@+id/button9"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/button13" />
@@ -249,19 +249,19 @@
         android:text="NINE"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/button14"
-        app:layout_constraintLeft_toRightOf="@+id/button11"
+        app:layout_constraintLeft_toRightOf="@+id/button10"
         android:layout_marginLeft="8dp" />
 
     <Button
         android:id="@+id/button16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="7dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:onClick="clickten"
         android:text="layout0"
-        app:layout_constraintLeft_toRightOf="@+id/button12"
-        app:layout_constraintTop_toTopOf="@+id/button12" />
+        app:layout_constraintLeft_toRightOf="@+id/button11"
+        app:layout_constraintTop_toBottomOf="@+id/button15" />
 
     <Button
         android:id="@+id/button17"
@@ -271,29 +271,84 @@
         android:layout_marginTop="8dp"
         android:onClick="clickeleven"
         android:text="Eleven"
-        app:layout_constraintLeft_toRightOf="@+id/button13"
+        app:layout_constraintLeft_toRightOf="@+id/button12"
         app:layout_constraintTop_toBottomOf="@+id/button16" />
 
     <Button
         android:id="@+id/button18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="-3dp"
         android:onClick="clicktwelve"
         android:text="twelve"
-        app:layout_constraintLeft_toRightOf="@+id/button14"
-        app:layout_constraintTop_toBottomOf="@+id/button17" />
+        app:layout_constraintLeft_toRightOf="@+id/button13"
+        app:layout_constraintTop_toTopOf="@+id/button13" />
 
     <Button
         android:id="@+id/button19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="6dp"
+        android:layout_marginLeft="1dp"
         android:layout_marginTop="8dp"
         android:onClick="clickthirteen"
         android:text="thirteen"
-        app:layout_constraintLeft_toRightOf="@+id/button15"
+        app:layout_constraintLeft_toRightOf="@+id/button14"
         app:layout_constraintTop_toBottomOf="@+id/button18" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clickfourteen"
+        android:text="fourteen"
+        app:layout_constraintLeft_toRightOf="@+id/button15"
+        app:layout_constraintTop_toBottomOf="@+id/button19" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clickfifteen"
+        android:text="fifteen"
+        app:layout_constraintLeft_toRightOf="@+id/button16"
+        app:layout_constraintTop_toBottomOf="@+id/button20" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clicksixteen"
+        android:text="sixteen"
+        app:layout_constraintLeft_toRightOf="@+id/button17"
+        app:layout_constraintTop_toBottomOf="@+id/button21" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:onClick="clickdrawerlayout"
+        android:text="Drawerlayout"
+        app:layout_constraintLeft_toRightOf="@+id/button18"
+        app:layout_constraintTop_toTopOf="@+id/button18"
+        android:layout_marginTop="-3dp" />
+
+    <Button
+        android:id="@+id/button35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clickseventeen"
+        android:text="seventeen"
+        app:layout_constraintLeft_toRightOf="@+id/button19"
+        app:layout_constraintTop_toBottomOf="@+id/button23" />
 
 </android.support.constraint.ConstraintLayout>
