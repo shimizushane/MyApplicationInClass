@@ -168,11 +168,12 @@ public class MainActivity extends AppCompatActivity {
     {
         startActivity(new Intent(MainActivity.this,FourteenActivity.class));
     }
-    /*
+
     public void clickfifteen(View v)
     {
-        startActivity(new Intent(MainActivity.this,ThirteenActivity.class));
+        startActivity(new Intent(MainActivity.this,FifteenActivity.class));
     }
+    /*
     public void clicksixteen(View v)
     {
         startActivity(new Intent(MainActivity.this,ThirteenActivity.class));
