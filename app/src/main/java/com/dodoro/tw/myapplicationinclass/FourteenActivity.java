@@ -89,11 +89,11 @@ public class FourteenActivity extends AppCompatActivity {
                 View v = layoutInflater.inflate(R.layout.myadapter_layout,null);
 
                 CheckBox chk =(CheckBox)v.findViewById(R.id.checkBox1);
-                //避免滑動而消失
+
                 chk.setText(cities[position]);
                 TextView tv = (TextView)v.findViewById(R.id.textView1);
                 tv.setText(cities[position]);
-
+                //避免滑動而消失
                 chk.setChecked(ischeckeditem[position]);
                 chk.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                     @Override
