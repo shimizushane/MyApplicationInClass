@@ -351,4 +351,26 @@
         app:layout_constraintLeft_toRightOf="@+id/button19"
         app:layout_constraintTop_toBottomOf="@+id/button23" />
 
+    <Button
+        android:id="@+id/button32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clickeightteen"
+        android:text="eightteen"
+        app:layout_constraintLeft_toRightOf="@+id/button20"
+        app:layout_constraintTop_toBottomOf="@+id/button35" />
+
+    <Button
+        android:id="@+id/button33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="clicknineteen"
+        android:text="Nineteen"
+        app:layout_constraintLeft_toRightOf="@+id/button21"
+        app:layout_constraintTop_toBottomOf="@+id/button32" />
+
 </android.support.constraint.ConstraintLayout>
