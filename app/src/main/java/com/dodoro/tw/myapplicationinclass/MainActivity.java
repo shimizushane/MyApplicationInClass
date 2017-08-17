@@ -196,6 +196,17 @@ public class MainActivity extends AppCompatActivity {
     {
         startActivity(new Intent(MainActivity.this,NineteenActivity.class));
     }
-
+    public void clicktwenty(View v)
+    {
+        startActivity(new Intent(MainActivity.this,TwentyActivity.class));
+    }
+    public void clicktwentyone(View v)
+    {
+        startActivity(new Intent(MainActivity.this,TwentyOneActivity.class));
+    }
+    public void clicktwentytwo(View v)
+    {
+        startActivity(new Intent(MainActivity.this,TwentyTwoActivity.class));
+    }
 
 }

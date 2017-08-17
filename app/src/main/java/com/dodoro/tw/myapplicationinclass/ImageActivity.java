@@ -23,5 +23,6 @@ public class ImageActivity extends AppCompatActivity implements Button.OnClickLi
     @Override
     public void onClick(View v) {
         Toast.makeText(ImageActivity.this,String.valueOf(v.getId()),Toast.LENGTH_SHORT).show();
+
     }
 }

@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -96,7 +97,13 @@
         <activity android:name=".SixteenActivity" />
         <activity android:name=".SeventeenActivity" />
         <activity android:name=".EightteenActivity" />
-        <activity android:name=".NineteenActivity"></activity>
+        <activity android:name=".NineteenActivity" />
+        <activity android:name=".TwentyActivity" />
+        <activity android:name=".TwentyOneActivity" />
+        <activity android:name=".TwentyTwoActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
     </application>
 
 </manifest>

@@ -11,7 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,8 +29,8 @@ public class NineActivity extends AppCompatActivity implements View.OnClickListe
         btn1 =(Button)findViewById(R.id.button1);
         btn2 =(Button)findViewById(R.id.button2);
         btn3 =(Button)findViewById(R.id.button3);
-        btn4 =(Button)findViewById(R.id.button4);
-        btn5 =(Button)findViewById(R.id.button5);
+        btn4 =(Button)findViewById(R.id.save);
+        btn5 =(Button)findViewById(R.id.read);
         btn6 =(Button)findViewById(R.id.button6);
         btn7 =(Button)findViewById(R.id.button7);
         fab = (FloatingActionButton)findViewById(R.id.floatingActionButton);
@@ -119,7 +118,7 @@ public class NineActivity extends AppCompatActivity implements View.OnClickListe
                     }
                 }).show();
                 break;
-            case R.id.button4:
+            case R.id.save:
                 final String str1[] = {"可樂", "紅茶", "汽水", "果汁"};
                 new AlertDialog.Builder(NineActivity.this).setTitle("列表對話框").setItems(str1, new DialogInterface.OnClickListener() {
                     @Override
@@ -138,7 +137,7 @@ public class NineActivity extends AppCompatActivity implements View.OnClickListe
                     }
                 }).show();
                 break;
-            case R.id.button5:
+            case R.id.read:
                 final String str2[] = {"可樂", "紅茶", "汽水", "果汁"};
                 final TextView tv4 = (TextView)findViewById(R.id.textView4);
                 chkstemp = chks.clone();
