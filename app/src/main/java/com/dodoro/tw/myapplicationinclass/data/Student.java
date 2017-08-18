@@ -18,4 +18,7 @@ public class Student {
     {
         return ID + "," + name + "," + tel;
     }
+    public String getName() {return name;}
+    public int getID(){return ID;}
+    public String getTel(){return tel;}
 }
