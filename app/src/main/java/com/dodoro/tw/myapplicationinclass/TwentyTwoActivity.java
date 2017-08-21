@@ -110,7 +110,6 @@ public class TwentyTwoActivity extends AppCompatActivity implements View.OnClick
 //                lv.setAdapter(adapter);
             }
         }
-
     }
 
     @Override
