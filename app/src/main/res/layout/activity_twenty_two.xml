@@ -22,7 +22,10 @@
 
         <ImageButton
             android:id="@+id/imageButton_search"
+<<<<<<< HEAD
             android:background="#00000000"
+=======
+>>>>>>> origin/master
             android:layout_width="80dp"
             android:layout_height="70dp"
             android:layout_weight="1"
@@ -30,7 +33,10 @@
 
         <ImageButton
             android:id="@+id/imageButton_add"
+<<<<<<< HEAD
             android:background="#00000000"
+=======
+>>>>>>> origin/master
             android:layout_width="80dp"
             android:layout_height="70dp"
             android:layout_weight="1"

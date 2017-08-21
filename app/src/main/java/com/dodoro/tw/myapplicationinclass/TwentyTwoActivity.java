@@ -22,12 +22,18 @@ import com.dodoro.tw.myapplicationinclass.data.*;
 
 import java.util.ArrayList;
 
+<<<<<<< HEAD
 public class TwentyTwoActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener
 {
 
     final int REQUEST_CODE_NAME = 111;
     Student[] students;
     StudentDAOMemoryImpl dao;
+=======
+public class TwentyTwoActivity extends AppCompatActivity implements View.OnClickListener{
+
+    final int REQUEST_CODE_NAME = 111;
+>>>>>>> origin/master
 
     ListView lv;
     ArrayList<String> mylist_name;
@@ -51,16 +57,24 @@ public class TwentyTwoActivity extends AppCompatActivity implements View.OnClick
         ibtn_search.setOnClickListener(this);
         btn_edit.setOnClickListener(this);
 
+<<<<<<< HEAD
 //        StudentDAOMemoryImpl dao = new StudentDAOMemoryImpl();
 
         dao = new StudentDAOMemoryImpl();
+=======
+        StudentDAOMemoryImpl dao = new StudentDAOMemoryImpl();
+>>>>>>> origin/master
         Student stu1 = new Student(1,"Bob","123123");
         Student stu2 = new Student(2,"Joe","456456");
         dao.add(stu1);
         dao.add(stu2);
 
+<<<<<<< HEAD
 //        final Student[] students = dao.getAllStudent();
         students = dao.getAllStudent();
+=======
+        final Student[] students = dao.getAllStudent();
+>>>>>>> origin/master
         for (Student s : students)
         {
 //            Log.d("DAO",s.getName());
@@ -69,7 +83,40 @@ public class TwentyTwoActivity extends AppCompatActivity implements View.OnClick
 
         adapter = new ArrayAdapter<String>(TwentyTwoActivity.this,android.R.layout.simple_list_item_1,mylist_name);
         lv.setAdapter(adapter);
+<<<<<<< HEAD
         lv.setOnItemClickListener(this);
+=======
+
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                Toast.makeText(TwentyTwoActivity.this,parent.getItemAtPosition(position).toString(),Toast.LENGTH_SHORT).show();
+                for (Student s : students)
+                {
+                    if (parent.getItemAtPosition(position) == s.getName())
+                    {
+                        LayoutInflater inflater = LayoutInflater.from(TwentyTwoActivity.this);
+                        View diagView = inflater.inflate(R.layout.hw_diag_show,null);
+                        TextView tv_id = (TextView) diagView.findViewById(R.id.textView_id);
+                        TextView tv_name = (TextView) diagView.findViewById(R.id.textView_name);
+                        TextView tv_tel = (TextView) diagView.findViewById(R.id.textView_tel);
+
+                        tv_id.setText(String.valueOf(s.getID()));
+                        tv_name.setText(s.getName());
+                        tv_tel.setText(s.getTel());
+
+                        new AlertDialog.Builder(TwentyTwoActivity.this).setTitle("學生資料").setCancelable(false).setView(diagView).setPositiveButton("確認", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                            }
+                        }).show();
+
+                    }
+                }
+            }
+        });
+>>>>>>> origin/master
 
     }
 
@@ -93,6 +140,7 @@ public class TwentyTwoActivity extends AppCompatActivity implements View.OnClick
         super.onActivityResult(requestCode,resultCode,data);
 
         if(requestCode == REQUEST_CODE_NAME) {
+<<<<<<< HEAD
             if (resultCode == RESULT_OK ) {
                 try {
                     Log.d("GetError","測試" + data.getStringExtra("id") + "0");
@@ -140,5 +188,29 @@ public class TwentyTwoActivity extends AppCompatActivity implements View.OnClick
 
             }
         }
+=======
+            if (resultCode == RESULT_OK) {
+
+                StudentDAOMemoryImpl dao = new StudentDAOMemoryImpl();
+                Student stu = new Student(data.getIntExtra("id",0),data.getStringExtra("name"),data.getStringExtra("tel"));
+                dao.add(stu);
+
+                mylist_name.add(stu.getName());
+                ArrayAdapter uradapterobj = lv.getAdapter();
+
+                uradapterobj.notifyDataSetChanged();
+/*
+                ListAdapter uradapteobjr=listview.getAdapter();
+                uradapterobj.notifyDataSetChanged();
+*/
+//                adapter.notifyDataSetChanged();
+
+//                adapter = new ArrayAdapter<String>(TwentyTwoActivity.this,android.R.layout.simple_list_item_1,mylist_name);
+//                lv.setAdapter(adapter);
+
+            }
+        }
+
+>>>>>>> origin/master
     }
 }
