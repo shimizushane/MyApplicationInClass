@@ -103,7 +103,9 @@
         <activity android:name=".TwentyTwoActivity" />
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings"></activity>
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".Hw_add" />
+        <activity android:name=".Hw_edit"></activity>
     </application>
 
 </manifest>

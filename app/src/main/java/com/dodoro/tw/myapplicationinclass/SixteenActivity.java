@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -15,12 +16,12 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
-public class SixteenActivity extends AppCompatActivity implements ValueEventListener {
+public class SixteenActivity extends AppCompatActivity implements ValueEventListener{
 
     EditText ed, ed2;
-    TextView tv, tv2;
+    TextView tv, tv2 ;
     FirebaseDatabase database;
-    DatabaseReference myRef,myRef1;
+    DatabaseReference myRef,myRef1,myRef2;
     final String TAG = "CHECK";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +33,14 @@ public class SixteenActivity extends AppCompatActivity implements ValueEventList
         myRef = database.getReference("message");
         myRef1 = database.getReference("temper");
 
-
+//        myRef = database.getReference("Taipei").child("temperaturehumidity").child("date");
+//        myRef1 = database.getReference("Taipei").child("temperaturehumidity").child("humidity");
+        myRef2 = database.getReference("Taipei").child("temperaturehumidity").child("temperature");
         // Read from the database
         myRef.addValueEventListener(this);
         myRef1.addValueEventListener(this);
+        myRef2.addValueEventListener(this);
+
     }
     public void clickupdata(View v)
     {
@@ -46,12 +51,16 @@ public class SixteenActivity extends AppCompatActivity implements ValueEventList
 
     @Override
     public void onDataChange(DataSnapshot dataSnapshot) {
-        String value = dataSnapshot.getValue(String.class);
+        String value = dataSnapshot.getValue(Integer.class).toString();
+//        String value = dataSnapshot.getValue().toString();
         tv = (TextView)findViewById(R.id.textView1);
         tv2 = (TextView)findViewById(R.id.textView2);
+
         tv.setText(value);
+
         Log.d(TAG, "Value is: " + value);
     }
+
 
     @Override
     public void onCancelled(DatabaseError databaseError) {
@@ -59,4 +68,5 @@ public class SixteenActivity extends AppCompatActivity implements ValueEventList
         // Failed to read value
         Log.w(TAG, "Failed to read value.", databaseError.toException());
     }
+
 }

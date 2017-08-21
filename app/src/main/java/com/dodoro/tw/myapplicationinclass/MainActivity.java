@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode,resultCode,data);
         if(requestCode == REQUEST_CODE_NAME) {
             if (resultCode == RESULT_OK) {
+                Log.d("GetError","測試");
                 TextView tv2 = (TextView) findViewById(R.id.textView3);
                 tv2.setText(data.getStringExtra("username"));
             }

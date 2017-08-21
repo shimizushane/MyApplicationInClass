@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 public class StudentDAOMemoryImpl implements StudentDAO {
     public static ArrayList<Student> mylist = new ArrayList<>();
+    public static ArrayList<String> mylist_name = new ArrayList<>();
     public StudentDAOMemoryImpl()
     {
 
